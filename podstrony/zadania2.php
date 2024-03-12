@@ -14,6 +14,39 @@
     for ($i = 1; $i <= 10; $i++){
         echo $i."<br>";
     }?>
+    <!--zad 2-->
+    <h2>Zad 2</h2>
+    <?php
+    for ($i = 10; $i >= 1; $i--){
+        echo $i."<br>";
+    }?>
+    <!--zad 3-->
+    <h2>Zad 3</h2>
+    <?php
+    $wynik = 0;
+    for ($i = 10; $i >= 1; $i--){
+        $wynik+=$i;  
+    }
+    echo $wynik;
+    ?>
+    <!--zad 4-->
+    <h2>Zad 4</h2>
+    <?php
+    $nr = 2;
+    for ($i = 10; $i >= 1; $i--){  
+        echo $nr."<br>";
+        $nr+=2;
+    }
+    ?>
+    <!--zad 5-->
+    <h2>Zad 5</h2>
+    <?php
+    $nr = 2;
+    for ($i = 10; $i >= 1; $i--){  
+        echo $nr."<br>";
+        $nr+=2;
+    }
+    ?>
 </body>
 <style>
     h2 {
