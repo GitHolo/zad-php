@@ -40,11 +40,23 @@
     ?>
     <!--zad 5-->
     <h2>Zad 5</h2>
+    <form method="post">
+        <label for="number1">Liczba miesięcy</label>
+        <input type="number" id="number1" name="number1" required>
+        <label for="number2">Liczba zł co miesiąc</label>
+        <input type="number" id="number2" name="number2" required>
+        <button type="submit" name="submit">Submit</button>
+    </form>
+
     <?php
-    $nr = 2;
-    for ($i = 10; $i >= 1; $i--){  
-        echo $nr."<br>";
-        $nr+=2;
+    if (isset($_POST["submit"])) {
+        $nr1 = $_POST["number1"];
+        $nr2 = $_POST["number2"];
+        $suma = 0;
+        for ($i = 1; $i <= $nr1; $i++){  
+            $suma=($suma+$nr2)*1.08;
+        }
+        echo "Zgromadzona kwota: ".round($suma, 2)." zł";
     }
     ?>
 </body>
