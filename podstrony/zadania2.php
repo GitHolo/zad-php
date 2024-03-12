@@ -59,6 +59,26 @@
         echo "Zgromadzona kwota: ".round($suma, 2)." zł";
     }
     ?>
+    <!--zad 6-->
+    <h2>Zad 6</h2>
+    <?php
+        $suma = 0;
+        $liczba = 5;
+        for ($i = 1; $i <= 100; $i++){  
+            $suma+=$liczba;
+            $liczba+=10;
+        }
+        echo $suma;
+    ?>
+    <!--zad 7-->
+    <h2>Zad 7</h2>
+    <?php
+        $suma = 0;
+        for ($pietro = 10; $pietro >= 1; $pietro--){  
+            $suma+=($pietro*$pietro);
+        }
+        echo "Liczba cegieł: ".$suma;
+    ?>
 </body>
 <style>
     h2 {
