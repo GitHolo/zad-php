@@ -79,6 +79,7 @@
         }
         echo "Liczba cegieł: ".$suma;
     ?>
+    <?php include "../footer.html"?>
 </body>
 <style>
     h2 {
