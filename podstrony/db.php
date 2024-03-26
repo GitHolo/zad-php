@@ -17,4 +17,5 @@ try {
 catch (mysqli_sql_exception){
     echo "Xd";
 }
+include "../footer.html";
 ?>
